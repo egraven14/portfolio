@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 17 07:47:30 2019
+
+@author: eric
+"""
+
+FB1 = 1
+FB2 = 2
+result = 0
+fibonacchi = 0
+
+result += FB2
+
+while fibonacchi < 4000000:
+    fibonacchi = FB1 + FB2 #3
+    FB1 = FB2
+    FB2 = fibonacchi
+    if fibonacchi%2 == 0:
+        result += fibonacchi
+    
+print (result)
